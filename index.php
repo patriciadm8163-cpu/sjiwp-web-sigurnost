@@ -1,3 +1,4 @@
+// TSD-4RT | PDM | 13.10
 <!DOCTYPE html>
 <!-- TSD-4RT | PDM | 22.09.2026. -->
 <html lang="hr">
@@ -20,8 +21,8 @@
                 <h1>Vaši podaci.<br><span>Naša zaštita.</span></h1>
                 <p class="lead">CyberGuard pruža moderna sigurnosna rješenja koja štite tvrtke, zaposlenike i podatke od sve složenijih digitalnih prijetnji.</p>
                 <div class="buttons">
-                    <a class="btn" href="usluge.html">Naše usluge</a>
-                    <a class="btn btn-outline" href="kontakt.html">Kontaktirajte nas</a>
+                    <a class="btn" href="usluge.php">Naše usluge</a>
+                    <a class="btn btn-outline" href="kontakt.php">Kontaktirajte nas</a>
                 </div>
             </div>
             <div class="hero-card">
@@ -53,7 +54,7 @@
                 <p class="eyebrow">NAŠ PRISTUP</p>
                 <h2>Zaštitite ono što je najvažnije.</h2>
                 <p>Od procjene rizika do edukacije zaposlenika, pokrivamo ključne dijelove informacijske sigurnosti.</p>
-                <a class="text-link" href="o-nama.html">Saznajte više o nama →</a>
+                <a class="text-link" href="o-nama.php">Saznajte više o nama →</a>
             </div>
             <div class="stats">
                 <div><strong>24/7</strong><span>Nadzor i podrška</span></div>

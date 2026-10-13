@@ -1,9 +1,12 @@
+// TSD-4RT | PDM | 13.10
 <!DOCTYPE html>
 <!-- TSD-4RT | PDM | 22.09.2026. -->
 <html lang="hr">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Kontakt | CyberGuard</title><link rel="stylesheet" href="css/stil.css"></head>
 <body>
-<header><div class="container nav"><a class="logo" href="index.html"><span>CG</span> CyberGuard</a><nav><a href="index.html">Početna</a><a href="o-nama.html">O nama</a><a href="usluge.html">Usluge</a><a href="novosti.html">Novosti</a><a href="kontakt.html" class="active">Kontakt</a></nav></div></header>
+<?php
+    include "header.php";
+    ?>
 <main>
 <section class="page-head"><div class="container"><p class="eyebrow">KONTAKT</p><h1>Razgovarajmo o vašoj sigurnosti.</h1><p>Pošaljite nam upit, a naš tim će vam odgovoriti u najkraćem mogućem roku.</p></div></section>
 <section class="section"><div class="container contact-grid">
@@ -16,6 +19,8 @@
 <div class="contact-info"><div class="info-box"><h3>CyberGuard</h3><p>Ulica sigurnosti 10<br>10000 Zagreb, Hrvatska</p><p><strong>Telefon:</strong><br>+385 1 555 1234</p><p><strong>E-mail:</strong><br>info@cyberguard.hr</p><p><strong>Radno vrijeme:</strong><br>Pon–Pet: 08:00–16:00</p></div><div class="map"><iframe src="https://www.google.com/maps?q=Zagreb,Croatia&output=embed" loading="lazy"></iframe></div></div>
 </div></section>
 </main>
-<footer><div class="container footer-grid"><div><a class="logo" href="index.html"><span>CG</span> CyberGuard</a><p>Stručna rješenja za informacijsku sigurnost i zaštitu digitalnog poslovanja.</p></div><div><h4>Kontakt</h4><p>Ulica sigurnosti 10, Zagreb</p><p>+385 1 555 1234</p><p>info@cyberguard.hr</p><p>Pon–Pet: 08:00–16:00</p></div><div><h4>Informacije</h4><a href="#">Politika privatnosti</a><a href="#">Uvjeti korištenja</a><a href="kontakt.html">Kontakt</a></div><div><h4>Pratite nas</h4><div class="social"><a href="#">in</a><a href="#">𝕏</a><a href="#">f</a></div><p class="small">Pretplatite se na naš newsletter</p><form class="newsletter"><input type="email" placeholder="Vaš e-mail" required><button>→</button></form></div></div><div class="copyright">© 2024 CyberGuard. Sva prava pridržana.</div></footer>
+<?php
+    include "footer.php";
+    ?>
 <script src="js/skripta.js"></script>
 </body></html>
