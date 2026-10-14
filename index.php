@@ -1,6 +1,7 @@
-// TSD-4RT | PDM | 13.10
+
 <!DOCTYPE html>
 <!-- TSD-4RT | PDM | 22.09.2026. -->
+ <!--TSD-4RT | PDM | 13.10-->
 <html lang="hr">
 <head>
     <meta charset="UTF-8">
@@ -41,9 +42,21 @@
                 <p>Naš tim pomaže organizacijama prepoznati rizike i izgraditi sigurnije digitalno okruženje.</p>
             </div>
             <div class="cards three">
-                <article class="card"><div class="icon">01</div><h3>Stručnost</h3><p>Pratimo moderne tehnologije i metode zaštite informacijskih sustava.</p></article>
-                <article class="card"><div class="icon">02</div><h3>Pouzdanost</h3><p>Gradimo dugoročne odnose s klijentima temeljene na povjerenju.</p></article>
-                <article class="card"><div class="icon">03</div><h3>Prilagođena rješenja</h3><p>Svaki sigurnosni plan prilagođavamo potrebama i veličini organizacije.</p></article>
+                <article class="card">
+                    <div class="icon">01</div>
+                    <h3>Stručnost</h3>
+                    <p>Pratimo moderne tehnologije i metode zaštite informacijskih sustava.</p>
+                </article>
+                <article class="card">
+                    <div class="icon">02</div>
+                    <h3>Pouzdanost</h3>
+                    <p>Gradimo dugoročne odnose s klijentima temeljene na povjerenju.</p>
+                </article>
+                <article class="card">
+                    <div class="icon">03</div>
+                    <h3>Prilagođena rješenja</h3>
+                    <p>Svaki sigurnosni plan prilagođavamo potrebama i veličini organizacije.</p>
+                </article>
             </div>
         </div>
     </section>
