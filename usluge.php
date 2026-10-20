@@ -10,6 +10,16 @@
 <?php
     include "header.php";
     ?>
+        <?php
+    $paket1 = "Osnovni";
+    $cijena1 = 99;
+
+    $paket2 = "Standardni";
+    $cijena2 = 199;
+
+    $paket3 = "Premium";
+    $cijena3 = 299;
+?>
 <main>
 <section class="page-head">
     <div class="container">
@@ -86,6 +96,21 @@
                         <td>Kompletna analiza + testiranje + savjetovanje</td>
                         <td>1.200 €</td>
                     </tr>
+                    <tr>
+                       <td><?php echo $paket1; ?></td>
+                         <td>Osnovna provjera sigurnosti računala, antivirusne zaštite i zaštite podataka.</td>
+                       <td><?php echo $cijena1; ?> €</td>
+                  </tr>
+                    <tr>
+                      <td><?php echo $paket2; ?></td>
+                     <td>Detaljna analiza sigurnosti sustava i mreže te preporuke za zaštitu od kibernetičkih napada</td>
+                     <td><?php echo $cijena2; ?> €</td>
+                </tr>
+                     <tr>
+                      <td><?php echo $paket3; ?></td>
+                       <td>Procjena sigurnosnih rizika, edukacija zaposlenika i prioritetna tehnička podrška.</td>
+                     <td><?php echo $cijena3; ?> €</td>
+                 </tr>
                 </tbody>
             </table>
         </div>
