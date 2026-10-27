@@ -1,6 +1,6 @@
 
 <?php
-// TSD-4RT | inicijali | 27.
+// TSD-4RT | inicijali | 27.10.2026
     var_dump(7 / 2);
     var_dump(8 / 2);
     var_dump("5" + 3);
@@ -24,7 +24,13 @@
     echo number_format(1234.5,2,",",".");
     echo round(318.75);
     echo date("j.n.Y.");
-
+   
+    $email = " Info@SigurnaMreza.HR ";
+    
+    $email = strtolower(trim($email));
+    
+    echo '<a href="mailto:' . $email . '">' . $email . '</a>';
+   
     
 
 ?>    
