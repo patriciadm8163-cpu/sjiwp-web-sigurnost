@@ -1,5 +1,11 @@
  <!--TSD-4RT | PDM | 13.10-->
+ <?php
+ $godinaOsnutka=2019;
+ date("Y");
+ $X=date("Y")-$godinaOsnutka;
+ ?>
 <footer>
+    <p>Na tržištu od 2019. — već <?php echo $X; ?> godina</p>
     <div class="container footer-grid">
         <div>
             <a class="logo" href="index.php"><span>CG</span> CyberGuard</a>
@@ -11,6 +17,7 @@
             <p>+385 1 555 1234</p>
             <p>info@cyberguard.hr</p>
             <p>Pon–Pet: 08:00–16:00</p>
+           
         </div>
         <div>
             <h4>Informacije</h4>

@@ -9,8 +9,7 @@
 <body>
 <?php
     include "header.php";
-    ?>
-        <?php
+
     $paket1 = "Osnovni";
     $cijena1 = 99;
 
@@ -19,6 +18,25 @@
 
     $paket3 = "Premium";
     $cijena3 = 299;
+
+    const PDV=0.25;
+
+    $usluga="Procjena rizika";
+    $cijena4=450;
+    $porez=450*PDV;
+    $ukupno1=$porez+$cijena4;
+
+    $usluga2="Sigurnosna analiza";
+    $cijena5=1280;
+    $porez2=1280*PDV;
+    $ukupno2=$porez2+$cijena5;
+
+    $usluga3="Edukacija zaposlenika";
+    $cijena6=300;
+    $porez3=300*PDV;
+    $ukupno3=$porez3+$cijena6;
+
+
 ?>
 <main>
 <section class="page-head">
@@ -97,24 +115,57 @@
                         <td>1.200 €</td>
                     </tr>
                     <tr>
-                       <td><?php echo $paket1; ?></td>
+                       <td><strong><?php echo $paket1; ?></strong></td>
                          <td>Osnovna provjera sigurnosti računala, antivirusne zaštite i zaštite podataka.</td>
                        <td><?php echo $cijena1; ?> €</td>
                   </tr>
                     <tr>
-                      <td><?php echo $paket2; ?></td>
+                      <td><strong><?php echo $paket2; ?></strong></td>
                      <td>Detaljna analiza sigurnosti sustava i mreže te preporuke za zaštitu od kibernetičkih napada</td>
                      <td><?php echo $cijena2; ?> €</td>
                 </tr>
                      <tr>
-                      <td><?php echo $paket3; ?></td>
+                      <td><strong><?php echo $paket3; ?></strong></td>
                        <td>Procjena sigurnosnih rizika, edukacija zaposlenika i prioritetna tehnička podrška.</td>
                      <td><?php echo $cijena3; ?> €</td>
                  </tr>
                 </tbody>
             </table>
-        </div>
+            </div>
         <p class="small">* Cijene su informativne i mogu se prilagoditi potrebama klijenta.</p>
+    </div>
+            <table>
+                <thead>
+                <tr>
+                        <th>Usluga</th>
+                        <th>Bez PDV-a</th>
+                        <th>PDV</th>
+                        <th>Ukupno</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><?php echo $usluga; ?></td>
+                        <td><?php echo number_format($cijena4,2,",","."); ?>€</td>
+                        <td><?php echo number_format($porez,2,",","."); ?>€</td>
+                        <td><?php echo number_format($ukupno1,2,",","."); ?>€</td>
+                    </tr>
+                    <tr>
+                        <td><?php echo $usluga2; ?></td>
+                        <td><?php echo number_format($cijena2,2,",","."); ?>€</td>
+                        <td><?php echo number_format($porez2,2,",","."); ?>€</td>
+                        <td><?php echo number_format($ukupno2,2,",","."); ?>€</td>
+                    </tr>
+                    <tr>
+                        <td><?php echo $usluga3; ?></td>
+                        <td><?php echo number_format($cijena6,2,",","."); ?>€</td>
+                        <td><?php echo number_format($porez3,2,",","."); ?>€</td>
+                        <td><?php echo number_format($ukupno3,2,",","."); ?>€</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        <p class="small">Cijene ažurirane: <?php echo date("j.n.Y.");?></p>
     </div>
 </section>
 </main>
