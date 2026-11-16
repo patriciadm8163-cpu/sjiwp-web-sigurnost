@@ -1,4 +1,4 @@
-
+// TSD-4RT | PDM | 16.11.2026
 <?php
 var_dump(5 == "5");
 var_dump(5 === "5");

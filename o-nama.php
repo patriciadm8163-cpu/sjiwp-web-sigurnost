@@ -3,6 +3,13 @@
 <!-- TSD-4RT | PDM | 22.09.2026. -->
 <?php
 $sat = (int) date("G");
+if ($sat < 12) {
+    $pozdrav = "Dobro jutro";
+} elseif ($sat < 18) {
+    $pozdrav = "Dobar dan";
+} else {
+    $pozdrav = "Dobra večer";
+}
 
 
 ?>
