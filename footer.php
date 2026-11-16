@@ -3,9 +3,48 @@
  $godinaOsnutka=2019;
  date("Y");
  $X=date("Y")-$godinaOsnutka;
+ $dan=(int) date("N");
+ $sat=(int) date("G");
+ $dan = 6;
+  $sat = 9;
+ if ($dan >= 1 && $dan <= 5 && $sat >= 8 && $sat < 16) {
+    $poruka = "Otvoreno — radimo do 16:00";
+    $klasa = "status-otvoreno";
+} elseif ($dan === 6 && $sat >= 9 && $sat < 13) {
+    $poruka = "Otvoreno — radimo do 13:00";
+    $klasa = "status-otvoreno";
+} else {
+    $poruka = "Zatvoreno";
+    $klasa = "status-zatvoreno";
+}
  ?>
 <footer>
+    <link rel="stylesheet" href="css/stil.css"></head>
     <p>Na tržištu od 2019. — već <?php echo $X; ?> godina</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Dan</th>
+                <th>Radno vrijeme</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ponedjeljak – Petak</td>
+                <td>08:00 – 16:00</td>
+            </tr>
+            <tr>
+                <td>Subota</td>
+                <td>09:00 – 13:00</td>
+            </tr>
+            <tr>
+                <td>Nedjelja</td>
+                <td>Zatvoreno</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="<?= $klasa ?>"><?= $poruka ?></p>
+    <br>
     <div class="container footer-grid">
         <div>
             <a class="logo" href="index.php"><span>CG</span> CyberGuard</a>
@@ -53,5 +92,6 @@
     $godina=2026;
     echo  "<p>© $godina CyberGuard. Sva prava pridržana.</p> ";
     ?>
+    
 
     </footer>

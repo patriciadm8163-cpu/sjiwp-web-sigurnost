@@ -100,7 +100,7 @@
                     <tr>
                         <td><strong>Start</strong></td>
                         <td>Osnovna procjena rizika i izvještaj</td>
-                        <td>250 €</td>
+                        <td>250 € </td>
                     </tr>
                     <tr>
                         <td><strong>Business</strong></td>
@@ -146,19 +146,19 @@
                 <tbody>
                     <tr>
                         <td><?php echo $usluga; ?></td>
-                        <td><?php echo number_format($cijena4,2,",","."); ?>€</td>
+                        <td><?php echo number_format($cijena4,2,",","."); ?>€ </td>
                         <td><?php echo number_format($porez,2,",","."); ?>€</td>
                         <td><?php echo number_format($ukupno1,2,",","."); ?>€</td>
                     </tr>
                     <tr>
                         <td><?php echo $usluga2; ?></td>
-                        <td><?php echo number_format($cijena2,2,",","."); ?>€</td>
+                        <td><?php echo number_format($cijena2,2,",","."); ?>€ </td>
                         <td><?php echo number_format($porez2,2,",","."); ?>€</td>
                         <td><?php echo number_format($ukupno2,2,",","."); ?>€</td>
                     </tr>
                     <tr>
                         <td><?php echo $usluga3; ?></td>
-                        <td><?php echo number_format($cijena6,2,",","."); ?>€</td>
+                        <td><?php echo number_format($cijena6,2,",","."); ?>€ </td>
                         <td><?php echo number_format($porez3,2,",","."); ?>€</td>
                         <td><?php echo number_format($ukupno3,2,",","."); ?>€</td>
                     </tr>

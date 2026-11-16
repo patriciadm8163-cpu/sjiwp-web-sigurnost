@@ -1,6 +1,14 @@
  <!--TSD-4RT | PDM | 13.10-->
  <!DOCTYPE html>
 <!-- TSD-4RT | PDM | 22.09.2026. -->
+<?php
+$sat = (int) date("G");
+
+
+?>
+
+<h1><?= $pozdrav ?>! Dobrodošli na našu stranicu.</h1>
+
 <html lang="hr">
 <head>
     <meta charset="UTF-8">
