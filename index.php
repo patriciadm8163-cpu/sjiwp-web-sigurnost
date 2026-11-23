@@ -12,9 +12,27 @@
 <body>
     <?php
     include "header.php";
+    $recenzije = [
+    [
+        'klijent' => 'Marko K.',
+        'ocjena'  => 5,
+        'tekst'   => 'Brza reakcija podrške i pouzdano održavanje.'
+    ],
+    [
+        'klijent' => 'Ana M.',
+        'ocjena'  => 4,
+        'tekst'   => 'Odličan omjer cijene i kvalitete.'
+    ],
+    [
+        'klijent' => 'Luka P.',
+        'ocjena'  => 3,
+        'tekst'   => 'Zadovoljni smo uslugom, povremeno bismo voljeli brži odgovor na manje upite.'
+    ]
+];
     ?>
 
 <main>
+
     <section class="hero">
         <div class="container hero-content">
             <div>
@@ -59,6 +77,23 @@
                 </article>
             </div>
         </div>
+        <br>
+        <div>
+    <?php foreach ($recenzije as $recenzija): ?>
+        <div>
+            <div aria-label="Ocjena <?= $recenzija['ocjena'] ?> od 5">
+                <?php
+                $ocjena = $recenzija['ocjena'];
+                for ($i = 1; $i <= 5; $i++) {
+                    echo ($i <= $ocjena) ? '★' : '☆';
+                }
+                ?>
+            </div>
+            <p><?= htmlspecialchars($recenzija['tekst']) ?></p>
+            <div>— <?= htmlspecialchars($recenzija['klijent']) ?></div>
+        </div>
+    <?php endforeach; ?>
+</div>
     </section>
 
     <section class="section dark">
