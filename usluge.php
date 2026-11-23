@@ -173,6 +173,36 @@
             </div>
         <p class="small">Cijene ažurirane: <?php echo date("j.n.Y.");?></p>
     </div>
+    <table>
+    <thead>
+        <tr>
+            <th>Broj računala</th>
+            <th>Mjesečno</th>
+        </tr>
+    </thead>
+    <tbody>
+    <?php
+    $cijenaPoRacunalu=12.0; // € mjesečno po računalu
+    $pragPopusta=20;       // od 20 i više računala
+    $popustPosto=10;       // 10 % popusta na cijeli iznos
+    for ($broj=5; $broj<=50; $broj+=5) {
+        $iznos=$broj * $cijenaPoRacunalu;
+        $imaPopust = ($broj>=$pragPopusta);
+
+        if ($imaPopust) {
+            $iznos = $iznos * (1 - $popustPosto / 100);
+        }
+
+        // Hrvatski zapis: dvije decimale, zarez kao decimalni separator, točka za tisućice
+        $formatiraniIznos = number_format($iznos, 2, ',', '.');
+        $klasa = $imaPopust ? ' class="popust"' : '';
+
+        echo "<tr{$klasa}>";
+        echo "<td>{$broj}</td>";
+        echo "<td>{$formatiraniIznos} €</td>";
+        echo "</tr>\n";
+    }
+    ?>
 </section>
 </main>
 <?php

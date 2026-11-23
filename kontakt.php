@@ -21,6 +21,19 @@
     <p class="eyebrow">JAVITE NAM SE</p>
     <h2>Pošaljite upit</h2>
     <form id="contactForm" novalidate>
+<label for="zaposlenici">Broj zaposlenika:</label>
+<select name="zaposlenici" id="zaposlenici">
+    <?php for ($z = 10; $z <= 200; $z += 10): ?>
+        <option value="<?= $z ?>"><?= $z ?></option>
+    <?php endfor; ?>
+</select>
+
+<label for="godina_osnutka">Godina osnutka vaše tvrtke:</label>
+<select name="godina_osnutka" id="godina_osnutka">
+    <?php for ($g = (int) date('Y'); $g >= 1990; $g--): ?>
+        <option value="<?= $g ?>"><?= $g ?></option>
+    <?php endfor; ?>
+</select>
 <label for="ime">Ime i prezime</label>
     <input type="text" id="ime" name="ime" required>
         <small class="error" id="imeError"></small>

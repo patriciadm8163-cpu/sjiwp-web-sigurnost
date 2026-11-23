@@ -10,10 +10,6 @@ if ($sat < 12) {
 } else {
     $pozdrav = "Dobra večer";
 }
-
-
-?>
-
 <h1><?= $pozdrav ?>! Dobrodošli na našu stranicu.</h1>
 
 <html lang="hr">
